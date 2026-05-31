@@ -1,5 +1,3 @@
-package com.assignment;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,10 +27,10 @@ public class ContactFormTest {
                     By.partialLinkText("Contact"))).click();
 
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.name("name"))).sendKeys("John Doe");
+                    By.name("name"))).sendKeys("Ashi");
 
             driver.findElement(By.name("email"))
-                    .sendKeys("john@gmail.com");
+                    .sendKeys("ashi@gmail.com");
 
             driver.findElement(By.name("message"))
                     .sendKeys("Testing QA Assignment");
